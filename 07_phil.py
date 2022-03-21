@@ -20,8 +20,9 @@ def delay(n):
     time.sleep(random.random()/n)
 
 
-def philosopher_task(num:int, table: Table, cheat:CheatMonitor):
-    table.set_current_phil(num)
+def philosopher_task(num:int, table: Table, cheat:CheatMonitor):  
+    
+    table.set_current_phil(num)    
     while True:
         print (f"Philosofer {num} thinking")
         print (f"Philosofer {num} wants to eat")
